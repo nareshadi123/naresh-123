@@ -1,0 +1,38 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sns:PutDataProtectionPolicy",
+                "sns:Publish",
+                "sns:DeleteTopic",
+                "sns:CreateTopic",
+                "sns:Subscribe",
+                "sns:ConfirmSubscription"
+            ],
+            "Resource": "arn:aws:sns:*:114014169154:*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "sns:DeleteSMSSandboxPhoneNumber",
+                "sns:CreatePlatformApplication",
+                "sns:SetSMSAttributes",
+                "sns:CreatePlatformEndpoint",
+                "sns:Unsubscribe",
+                "sns:OptInPhoneNumber",
+                "sns:DeleteEndpoint",
+                "sns:SetEndpointAttributes",
+                "sns:SetSubscriptionAttributes",
+                "sns:DeletePlatformApplication",
+                "sns:CreateSMSSandboxPhoneNumber",
+                "sns:SetPlatformApplicationAttributes",
+                "sns:VerifySMSSandboxPhoneNumber"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

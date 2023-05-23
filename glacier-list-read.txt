@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "glacier:ListJobs",
+                "glacier:GetVaultAccessPolicy",
+                "glacier:ListMultipartUploads",
+                "glacier:ListTagsForVault",
+                "glacier:DescribeVault",
+                "glacier:GetJobOutput",
+                "glacier:GetVaultLock",
+                "glacier:ListParts",
+                "glacier:GetVaultNotifications",
+                "glacier:DescribeJob"
+            ],
+            "Resource": "arn:aws:glacier:*:114014169154:vaults/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "glacier:GetDataRetrievalPolicy",
+                "glacier:ListVaults",
+                "glacier:ListProvisionedCapacity"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "vpc-lattice:GetAuthPolicy",
+                "vpc-lattice:GetService",
+                "vpc-lattice:GetResourcePolicy"
+            ],
+            "Resource": "arn:aws:vpc-lattice:*:114014169154:service/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "vpc-lattice:GetServiceNetworkServiceAssociation",
+                "vpc-lattice:GetServiceNetworkVpcAssociation",
+                "vpc-lattice:ListTargets",
+                "vpc-lattice:GetListener",
+                "vpc-lattice:GetAuthPolicy",
+                "vpc-lattice:GetServiceNetwork",
+                "vpc-lattice:GetAccessLogSubscription",
+                "vpc-lattice:GetResourcePolicy",
+                "vpc-lattice:GetTargetGroup"
+            ],
+            "Resource": [
+                "arn:aws:vpc-lattice:*:114014169154:accesslogsubscription/*",
+                "arn:aws:vpc-lattice:*:114014169154:targetgroup/*",
+                "arn:aws:vpc-lattice:*:114014169154:servicenetwork/*",
+                "arn:aws:vpc-lattice:*:114014169154:service/*/listener/*",
+                "arn:aws:vpc-lattice:*:114014169154:servicenetworkvpcassociation/*",
+                "arn:aws:vpc-lattice:*:114014169154:servicenetworkserviceassociation/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": "vpc-lattice:GetRule",
+            "Resource": "arn:aws:vpc-lattice:*:114014169154:service/*/listener/*/rule/*"
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": [
+                "vpc-lattice:ListServices",
+                "vpc-lattice:ListRules",
+                "vpc-lattice:ListAccessLogSubscriptions",
+                "vpc-lattice:ListTargetGroups",
+                "vpc-lattice:ListTagsForResource",
+                "vpc-lattice:ListListeners",
+                "vpc-lattice:ListServiceNetworks",
+                "vpc-lattice:ListServiceNetworkServiceAssociations",
+                "vpc-lattice:ListServiceNetworkVpcAssociations"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

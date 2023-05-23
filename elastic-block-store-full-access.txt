@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ebs:CompleteSnapshot",
+                "ebs:ListSnapshotBlocks",
+                "ebs:StartSnapshot",
+                "ebs:PutSnapshotBlock",
+                "ebs:ListChangedBlocks",
+                "ebs:GetSnapshotBlock"
+            ],
+            "Resource": "arn:aws:ec2:*::snapshot/*"
+        }
+    ]
+}

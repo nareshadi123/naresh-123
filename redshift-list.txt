@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "redshift:ListSchemas",
+                "redshift:ListDatabases",
+                "redshift:DescribeClusterTracks",
+                "redshift:DescribeNodeConfigurationOptions",
+                "redshift:DescribeEvents",
+                "redshift:ListSavedQueries",
+                "redshift:DescribeClusters",
+                "redshift:ViewQueriesInConsole",
+                "redshift:DescribeClusterDbRevisions",
+                "redshift:ViewQueriesFromConsole",
+                "redshift:ListTables"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
